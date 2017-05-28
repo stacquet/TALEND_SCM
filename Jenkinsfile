@@ -1,9 +1,9 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        input(message: 'faites votre choix', id: 'choice1')
+        input(message: 'faites votre choix', id: 'choice1', ok: 'tata', submitter: 'cle', submitterParameter: 'valeur')
       }
     }
   }
